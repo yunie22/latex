@@ -1,0 +1,53 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[hmargin=2cm]{geometry}
+
+% package "amsmath"
+\DeclareMathOperator{\arcsec}{arcsec}
+
+% package "mathtools"
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+\twocolumn[
+  \centering
+  \begin{minipage}{\textwidth}
+    \begin{center}
+      {\Large \textbf{Integration Formulae}\par}
+      \medskip
+      {\large Ng Yu Nie\par}
+      {\large 01/03/2022 \par}
+      \bigskip
+      Note: This document serves as an easy reference to integration formulae.
+      \bigskip
+      \hrule \bigskip
+    \end{center}
+  \end{minipage}
+]
+
+
+\begin{enumerate}
+  \item $\int kf(x) \: dx = k\int f(x) \: dx$
+  \item $\int [f(x) \pm g(x)] \: dx = \int f(x)dx \pm \int g(x) \: dx$
+  \item $\int k \: dx = kx + C$
+  \item $\int x^n \: dx = \dfrac{x^{n+1}}{n+1} + C, n \neq -1$
+  \item $\int \sin x \: dx = - \cos x + C$
+  \item $\int \cos x \: dx = \sin x + C$
+  \item $\int \sec^2 x \: dx = \tan x + C$
+  \item $\int \csc^2 x \: dx = - \cot x + C$
+  \item $\int \sec x \tan x \: dx = \sec x + C$
+  \item $\int \csc x \cot x \: dx = - \csc x + C$
+  \item $\int e^x \: dx = e^x + C$
+  \item $\int a^x \: dx = \dfrac{a^x}{\ln a} + C, a > 0, a \neq 1$
+  \item $\displaystyle \int \dfrac{dx}{x} = \ln \abs{x} + C$
+  \item $\int \tan x \: dx = - \ln \abs{\cos x} + C$
+  \item $\int \cot x \: dx = \ln \abs{\sin x} + C$
+  \item $\int \sec x \: dx = \ln \abs{\sec x + \tan x} + C$
+  \item $\int \csc x \: dx = -\ln \abs{\csc x + \cot x} + C$
+  \item $\displaystyle \int \dfrac{dx}{\sqrt{a^2 - x^2}} = \arcsin \dfrac{x}{a} + C$
+  \item $\displaystyle \int \dfrac{dx}{a^2 + x^2} = \dfrac{1}{a} \arctan \dfrac{x}{a} + C$
+  \item $\displaystyle \int \dfrac{dx}{x \sqrt{x^2 - a^2}} = \dfrac{1}{a} \arcsec \dfrac{x}{a} + C$
+\end{enumerate}
+
+\end{document}

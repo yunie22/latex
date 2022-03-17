@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{mathtools}
+\usepackage[hmargin=2cm]{geometry}
+
+% package "mathtools"
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+\begin{document}
+\twocolumn[
+  \centering
+  \begin{minipage}{\textwidth}
+    \begin{center}
+      {\Large \textbf{Differentiation Formulae}\par}
+      \medskip
+      {\large Ng Yu Nie\par}
+      {\large 23/10/2021\par}
+      \bigskip
+      Note: This document serves as an easy reference to differentiation formulae.
+      \bigskip
+      \hrule \bigskip
+    \end{center}
+  \end{minipage}
+]
+
+\begin{enumerate}
+  \item $\dfrac{d}{dx}k = 0$
+  \item $\dfrac{d}{dx}[f(x) \pm g(x)] = f'(x) \pm g'(x)$
+  \item $\dfrac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$
+  \item $\dfrac{d}{dx}[f(x)g(x)] = f(x)g'(x) + g(x)f'(x)$
+  \item $\dfrac{d}{dx}\left( \dfrac{f(x)}{g(x)} \right) = \dfrac{g( x)f'(x) - f(x)g'(x)}{[g(x)^2]}$
+  \item $\dfrac{d}{dx}f(g(x)) = f'(g(x)) \cdot g'(x)$
+  \item $\dfrac{d}{dx}x^n = nx^{n-1}$
+  \item $\dfrac{d}{dx}\sin x = \cos x$
+  \item $\dfrac{d}{dx}\cos x = - \sin x$
+  \item $\dfrac{d}{dx}\tan x = \sec^2 x$
+  \item $\dfrac{d}{dx}\cot x = - \csc^2 x$
+  \item $\dfrac{d}{dx}\sec x = \sec x \tan x$
+  \item $\dfrac{d}{dx}\csc x = - \csc x \cot x$
+  \item $\dfrac{d}{dx}e^x = e^x$
+  \item $\dfrac{d}{dx}a^x = a^x \ln a$
+  \item $\dfrac{d}{dx}\ln \abs{x}  = \dfrac{1}{x}$
+  \item $\dfrac{d}{dx}\sin^{-1} x = \dfrac{1}{\sqrt{1 - x^2}}$
+  \item $\dfrac{d}{dx}\cos^{-1} x = \dfrac{-1}{\sqrt{1 - x^2}}$
+  \item $\dfrac{d}{dx}\tan^{-1} x = \dfrac{1}{x^2 + 1}$
+  \item $\dfrac{d}{dx}\cot^{-1} x = \dfrac{-1}{x^2 + 1}$
+  \item $\dfrac{d}{dx}\sec^{-1} x = \dfrac{1}{\abs{x} \sqrt{x^2 - 1}}$
+  \item $\dfrac{d}{dx}\csc^{-1} x = \dfrac{-1}{\abs{x} \sqrt{x^2 - 1}}$
+\end{enumerate}
+
+\end{document}
